@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mode": "synthetic_offline",
+  "queried_at": "2026-11-13T00:00:00+00:00",
+  "indicators": [
+    {
+      "type": "ip",
+      "indicator": "192.0.2.10",
+      "results": [
+        {
+          "provider": "virustotal",
+          "status": "synthetic",
+          "analysis_stats": {
+            "malicious": 2,
+            "harmless": 8
+          }
+        },
+        {
+          "provider": "abuseipdb",
+          "status": "synthetic",
+          "abuse_confidence_score": 25,
+          "total_reports": 3,
+          "window_days": 90
+        }
+      ]
+    },
+    {
+      "type": "domain",
+      "indicator": "portal.lab.test",
+      "results": [
+        {
+          "provider": "virustotal",
+          "status": "synthetic",
+          "analysis_stats": {
+            "malicious": 0,
+            "undetected": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "ip",
+      "indicator": "2001:db8::10",
+      "results": [
+        {
+          "provider": "fixture",
+          "status": "no_fixture"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Observations are not verdicts; no automatic blocking."
+}

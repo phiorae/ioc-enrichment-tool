@@ -1,0 +1,29 @@
+{
+  "ip:192.0.2.10": [
+    {
+      "provider": "virustotal",
+      "status": "synthetic",
+      "analysis_stats": {
+        "malicious": 2,
+        "harmless": 8
+      }
+    },
+    {
+      "provider": "abuseipdb",
+      "status": "synthetic",
+      "abuse_confidence_score": 25,
+      "total_reports": 3,
+      "window_days": 90
+    }
+  ],
+  "domain:portal.lab.test": [
+    {
+      "provider": "virustotal",
+      "status": "synthetic",
+      "analysis_stats": {
+        "malicious": 0,
+        "undetected": 10
+      }
+    }
+  ]
+}
